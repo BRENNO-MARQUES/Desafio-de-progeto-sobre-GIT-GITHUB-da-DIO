@@ -1,230 +1,213 @@
 # Desafio-de-progeto-sobre-GIT-GITHUB-da-DIO
 Repositório criado para o desafio de progeto 
 
-## Comandos Git básicos
+# Como instalar o GIT no Windows (Passo a passo!)
 
-1. git config
-Quando você está utilizando o Git pela primeira vez ou com uma instalação nova, em um projeto colaborativo, esse comando é fundamental para configurar sua identidade de usuário, inserindo informações como nome e email que serão empregadas em cada commit.
+[Ads by **optAd360**](https://www.optad360.com/en/?utm_medium=AdsInfo&utm_source=dicasdeprogramacao.com.br)
 
-Exemplo:
+![GIT e Windows](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/destaque.png)
 
-$ git config –global user.name “Seu nome”
+Primeiro, acesse o [site oficial](https://git-scm.com/downloads) para baixar o instalador do git. Escolha o sistema operacional que você pretende instalar (no meu caso é o Windows) e baixe o instalador apropriado.
 
-$ git config –global user.email “Seu email”
+<iframe frameborder="0" src="https://aca22b640e68b94a63ab2d6564bd9ec5.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/121764058,22539195802/dicasdeprogramacao.com.br/dicasdeprogramacao.com.br_am_S2_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="320" height="50" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="3" oawidthset="true" data-load-complete="true" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: bottom; width: 320px; height: 50px;"></iframe>
 
-2. git init
-Esse é o comando que você irá utilizar para criar um novo projeto de git. O comando irá criar um repositório novo em branco e, a partir daí, será possível armazenar seu código fonte, alterar, salvaguardar alterações etc.
 
-Exemplo:
 
-$ git init
+![Página de download do instalador do GIT](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/site-download-git.png)
 
-Se você já possui um repositório anterior ou deseja criar um repositório com um nome em específico, você pode passar o nome como parâmetro do comando:
+Após o instalador ser baixado, execute-o.
 
-$ git init <O nome do seu repositório>
+![Executando o instalador do GIT](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/executando-o-instalador-do-git.png)
 
-3. git clone
-Esse comando Git cria uma cópia exata de um repositório já existente.
 
-Então… quando usar git init e quando usar git clone? O git clone é mais avançado, uma vez que ele mesmo executa um comando git init internamente. Além disso, ele verifica todo o conteúdo do projeto.
 
-Exemplo:
+A primeira tela do instalador do GIT apresenta os termos da licença de utilização do GIT. Basta clicar em **Next**.
 
-git clone <URL do seu projeto>
+![Primeira tela do instalador do GIT.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-01-termos.png)
 
-4. git add
 
 
-Esse comando Git adiciona os arquivos especificados de código ao seu repositório, sejam arquivos novos ou arquivos anteriores que foram alterados. Oferece diferentes possibilidades de sintaxe.
 
-Exemplo:
 
-$ git add seu_arquivo (esse comando irá adicionar o arquivo em específico ao repositório)
+A segunda tela é para a seleção do local da instalação, eu mantenho o padrão `C:\Program Files\Git`, mas sinta-se livre para alterar. Após definir o local da instalação do GIT, clique em **Next**.
 
-$ git add * (esse comando irá adicionar todos os arquivos novos e/ou modificados ao repositório)
+![Tela de seleção do local de instalação do GIT.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-02-local.png)
 
-5. git commit
-É fundamental se estabelecer uma diferença entre git add e git commit:
 
-git add adiciona seus arquivos modificados à fila para serem submetidos a um commit posteriormente. Os arquivos não passaram por um commit.
-O git commit executa o commit dos arquivos que foram adicionados e cria uma nova revisão com um log. Por outro lado, se você não adicionar nenhum arquivo, o git não fará o commit de nada.
-É possível combinar as duas ações em um único comando: $ git commit -a.
 
-Também é possível adicionar uma mensagem para a execução de um commit. Exemplo:
 
-$ git commit -m “seu comentário”
 
-6. git branch
-É comum na maior parte do tempo possuir múltiplas variações em seu repositório Git, chamadas de branches (“ramificações”). A grosso modo, um branch é um caminho independente de desenvolvimento, uma alternativa.
+Agora o instalador oferece a possibilidade de selecionar os componentes do GIT que queremos que seja instalado.
 
-A princípio pode parecer fácil se perder em diversos caminhos, mas o comando git branch facilita o gerenciamento de tudo isso. Com diferentes parâmetros, é possível listar, criar ou apagar os branches.
+Eu não gosto de adicionar ícones no Desktop, por isso eu desmarco. Os demais componentes eu marquei todos:
 
-Exemplos:
+- Integração com Windows Explorer
+- Suporte a arquivos grandes
+- Associação de arquivos, e editor de texto padrão
+- Permitir que o prompt de comandos seja colorido para as opções do git
+- Verificação diária de atualização.
 
-$ git branch (lista todas as ramificações)
+Escolha os componentes de sua preferência e clique em **Next**.
 
-$ git branch <nome_do_branch> (cria um branch com o nome especificado)
+![Tela de seleção de componentes do GIT.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-03-componentes.png)
 
-$ git branch -d <nome_do_branch> (deleta o branch com o nome especificado)
 
-7. git checkout
-Ainda sobre branches, esse comando Git pode ser utilizado para trocar de uma ramificação para outra.
 
-Exemplo:
 
-$ git checkout <nome_do_branch>
 
-Também é possível combinar operações, criando e fazendo o checkout de um novo branch com um único comando:
+Em seguida o instalador do GIT nos indica que criará uma pasta com atalhos no menu iniciar, se quiser, você pode marcar o *checkbox*`Don't create a Start Menu folder` para o instalador não criar esta pasta.
 
-$ git checkout -b <nome_do_branch_novo>
+No meu caso eu deixei o instalador criar os atalhos no menu Iniciar.
 
-Comandos Git intermediários
-8. git remote
-O comando Git remote estabelece uma conexão entre seu repositório local e um repositório remoto.
+Clique em **Next** para continuar a instalação.
 
-Exemplo:
+![Tela de criação de atalho do GIT no menu Iniciar](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-04-atalho-iniciar.png)
 
-$ git remote add <nomecurto> <url>
 
-9. git push
 
 
-Esse comando serve para subir suas modificações para um repositório remoto conectado anteriormente com git remote.
 
-Exemplo:
+Na sequência o instalador pede para selecionarmos o editor de texto que deve ser utilizado para editar os conflitos que por ventura acontecerem.
 
-$ git push -u <nome_curto> <nome_do_branch>
+Eu gosto do Vim mesmo, mas você pode não tem muita afinidade com o Vim você pode alterar para Notepad++, Sublime, Atom, VS Code, ou outro editor de sua preferência.
 
-É importante especificar a origem e o upstream antes de usar o git push. Veja o exemplo:
 
-$ git push –set-upstream <nome_curto> <nome_do_branch>
 
-10. git fetch
-Quando você precisa baixar as mudanças criadas por outros membros do seu projeto colaborativo, você precisa do comando Git fetch. A partir desse comando, você irá receber todas as informações de commits, para avaliar, antes de aplicar essas alterações na sua versão local do repositório.
+Após a escolha, clique em **Next** para continuar com a instalação.
 
-Exemplo:
+![Tela de seleção do editor de conflitos padrão do GIT](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-05-editor-de-conflitos.png)
 
-$ git fetch
 
-11. git pull
-O comando Git pull baixa o conteúdo (não os metadados) do que foi alterado no repositório remoto para o seu repositório local e imediatamente atualiza seu contreúdo para a última versão.
 
-Exemplo:
 
-$ git pull <URL>
 
-12. git stash
+Neste momento começa algumas partes confusas para quem não conhece muito o GIT.
 
+Na próxima tela o instalador do GIT nos pergunta se queremos usar os comandos do git:
 
-Esse comando Git armazena temporariamente seus arquivos modificados em uma área chamada stash (“esconderijo”), sem interagir com os outros arquivos até ser necessário.
+- somente no prompt de comandos do próprio git (chamado de Git Bash), neste caso ele não vai alterar a variável de ambiente PATH.
+- no prompt do Windows (Windows Command Prompt), neste caso a variável de ambiente PATH será alterada para incluir o caminho de onde está o executável git.exe.
+- no prompt do Windows + comandos utilitários do línux. Eu sempre marco esta opção, porque o instalador traz para o Windows alguns comando que eu uso muito no Linux, como `cat`, `ls`, `find`, etc. Neste caso a variável de ambiente PATH será alterada para incluir o caminho do executável git.exe e dos executáveis de cada comando utilitário do linux.
 
-Exemplo:
+Escolha a opção que acha mais adequada para você e clique em **Next**
 
-$ git stash
 
-Para listar todos os seus “esconderijos”, usamos:
 
-$ git stash list
+![Tela de ajuste da variável de ambiente PATH.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-05-comandos-linux.png)
 
-Quando for o momento de aplicar o conteúdo do stash a um branch, usamos o parâmetro “apply”:
+A tela seguinte do instalador oferece a opção de escolhar a biblioteca de validação de chaves de segurança SSL.
 
-$ git stash apply
 
-13. git show
-Quer detalhes específicos sobre um commit que o log não mostra? O comando Git show é a resposta.
 
-Exemplo:
 
-$ git show <hash_do_commit>
 
-14. git rm
-Para remover arquivos da sua pasta, você pode utilizar o comando Git rm.
+Eu costumo utilizar a OpenSSL, que é compatível com outras plataformas.
 
-Exemplo:
+Escolha a que achar apropriada e clique em **Next**.
 
-$ git rm <nome_do_arquivo>
+![Tela de seleção de biblioteca de validação de certificados SSL](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-06-biblioteca-ssl.png)
 
-15. git help
-Existem inúmeros comandos no Git, muito mais do que os 25 dessa lista, cada um com sua função, parâmetros e características. Felizmente, o próprio Git tem o comando help para trazer ajuda diretamente no terminal.
 
-Exemplo:
 
-$ git help <comando que se tem dúvida>
 
-16. git merge
 
+Neste ponto da instalação, nos é perguntado como o git deve tratar o final dos arquivos de texto.
 
-Esse comando Git integra as mudanças de dois branches diferentes em um único branch. Ele precisa ser iniciado a partir de um branch já selecionado, que será mesclado com outro, com o nome passado por parâmetro.
+Este é um assunto complicado de explicar em poucas palavras, mas vamos lá ...
 
-Exemplo:
+Vamos dar uma pequena pausa na instalação do GIT aqui para entender esse assunto.
 
-$ git merge <nome_do_branch>
+## COMO É TRATADO O FINAL DE LINHA DOS ARQUIVOS DE TEXTOS
 
-Comandos Git avançados
-17. git rebase
-Git rebase a princípio parece fazer o mesmo que um comando git merge: ele integra dois branches em um branch único. Porém, esse comando refaz o histórico de commits, tornando-o linear. É o mais indicado para consolidar múltiplos branches.
+O Windows e o Unix, tratam o final de linha dos arquivos texto de formas diferentes.
 
-Exemplo:
+Pra resumir a história ... o Windows segue um padrão antigo de comandos de impressora, chamado de CRLF, que indica para o cabeçote da impressora ir para o início horizontal (Carriage Return) e para iniciar uma próxima linha (Line Feed).
 
-$ git rebase <base>
 
-18. git pull –rebase
-Essa é uma variação do comando pull mostrado anteriormente. A partir dessa instrução, o Git irá fazer um rebase (não um merge) depois de se utilizar um comando pull.
 
-Exemplo:
 
-$ git pull –rebase
 
-19. git cherry-pick
-Esse é um comando poderoso que permite selecionar qualquer commit específico de um brach e aplicá-lo a outro branch, sem precisar de uma mescla completa. A operação fica adicionada no histórico.
+Como se fosse aquela alavanca da máquina de escrever que funciona dessa forma, *vai pro início e para a próxima linha*.
 
-Exemplo:
+Já no linux, ficou comum somente o comando LF que teria o mesmo funcionamento do CRLF, ou seja, *próxima linha...início.*
 
-$ git cherry-pick <commit-hash>
+Isso significa que o Linux usa um caracter ASCII para a quebra de linha e o Windows usa dois. Esta é a mesma origem da confusão entre `\n` e `\r`, mas isso é assunto pra outro post.
 
-20. git archive
+Por agora entenda as opções que o instalador do GIT oferece:
 
+- converter `LF` para `CRLF` ao baixar arquivos e `CRLF` para `LF` ao comitar.
+- baixar como é (não converte nada), mas comitar convertendo `CRLF` para `LF`.
+- não converter nada, baixar como é e comitar como estiver.
 
-Esse comando Git combina múltiplos arquivos em um único arquivo, como se fosse um arquivo zipado. Esse pacote pode ser aberto depois e os arquivos contidos podem ser extraídos individualmente.
+Eu marco a primeira opção, para evitar problemas de compatibilidade entre as plataformas.
 
-Exemplo:
 
-$ git archive –format zip HEAD > archive-HEAD.zip
 
-21. git blame
-O comando “dedo-duro”, blame ajuda a determinar qual usuário realizou qual mudança em um determinado arquivo.
 
-Exemplo:
 
-$ git blame <nome_do_arquivo>
+![Tela de configuração de final de linha do instalador do GIT.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-07-caracter-de-final-de-linha.png)
 
-22. git tag
-Tags são uma boa opção para marcar uma branch e evitar alteração, principalmente em releases públicos.
+## CONTINUANDO A INSTALAÇÃO ...
 
-Exemplo:
+Na sequência, o instalador oferece a opção de escolher o emulador de terminal (prompt) que queremos usar para o GIT. Podemos usar o console padrão do Windows (cmd.exe) ou o MinTTY que é um emulador que oferece algumas características melhores na minha opinião.
 
-$ git tag -a v1.0.0
 
-23. git diff
-Para comparar dois arquivos gits ou dois branches antes de passarem por um commit ou um push, é importante executar esse comando Git.
 
-Exemplos:
 
-comparando o repositório ativo com o repositório local: $ git diff HEAD <nome_do_arquivo>
-comparando duas ramificações: $ git diff <branch de origem> <branch de destino>
-24. git citool
-Esse comando Git oferece uma alternativa gráfica ao commit.
 
-Exemplo:
+Em suma, o cmd é usado para compatibilidade com plataformas de 32 bits, ou seja, se o seu windows for 32 bits, é melhor escolher o cmd mesmo, mas se o seu windows for de 64 bits, é melhor escolher o MinTTY, pq ele oferece alguns recursos melhores para terminal, como por exemplo **maximizar**.
 
-$ git citool
+![Tela de escolha de emulador de terminal do GIT.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-08-emulador-de-terminal.png)
 
-25. git whatchanged
-Esse comando oferece informações de log, mas em formato raw.
 
-Exemplo:
 
-$ git whatcites
 
-Links dos sites
+
+A penúltima tela nos oferece algumas opções extras, são elas:
+
+- habilitar cache de arquivos na memória. Isso melhora o desempenho do git em alguns casos.
+- habilitar o gerenciador de credenciais do GIT. Isso permite autenticação em duas etapas no VSTS e no GitHub, e precisa do framework .NET 4.5 para funcionar.
+- habilitar links simbólicos: Sinceramente, não sei o que é isso no Windows e não me fez falta ainda, se você souber do que se trata, apreciarei muito uma explicação aí nos comentários. ;)
+
+Selecione os itens opcionais que você deseja e clique em **Next**.
+
+![Tela de escolha de ítens opcionais do GIT no Windows](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-09-opcoes-extras.png)
+
+
+
+
+
+Por fim, última tela do instalador do GIT no Windows (UFA!!!), o instalador nos oferece alguns componentes que estão em fase de experimentação.
+
+São componentes que não foram muito testados, mas que parecem melhorar bastante a performance.
+
+Você escolhe se que instala ou não ...
+
+Eu não marquei.
+
+Após decidir se instala os componentes experimentais ou não, clique em **Install** para começar a instalação.
+
+![Tela de seleção de componentes experimentais do GIT.](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-10-componentes-experimentais.png)
+
+
+
+
+
+Depois da instalação, o instalador oferece a opção de já rodar o prompt do GIT (Git Bash) e ver o arquivo de texto com as notas da versão lançada.
+
+Se quiser uma dessas duas opções, marque-a, eu desmarquei as duas.
+
+Para finalizar, clique em **Finish**.
+
+![Tela final do instalador do GIT](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/instalador-git-11-finalizar-instalacao.png)
+
+
+
+
+
+Pronto, agora você tem o GIT instalado no seu Windows
+
+LINKS
+
+https://dicasdeprogramacao.com.br/como-instalar-o-git-no-windows/
 
