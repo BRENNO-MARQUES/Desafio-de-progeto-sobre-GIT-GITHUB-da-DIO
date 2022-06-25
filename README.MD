@@ -3,13 +3,9 @@ Repositório criado para o desafio de progeto
 
 # Como instalar o GIT no Windows (Passo a passo!)
 
-[Ads by **optAd360**](https://www.optad360.com/en/?utm_medium=AdsInfo&utm_source=dicasdeprogramacao.com.br)
-
 ![GIT e Windows](https://dicasdeprogramacao.com.br/images/como-instalar-o-git-no-windows/destaque.png)
 
 Primeiro, acesse o [site oficial](https://git-scm.com/downloads) para baixar o instalador do git. Escolha o sistema operacional que você pretende instalar (no meu caso é o Windows) e baixe o instalador apropriado.
-
-<iframe frameborder="0" src="https://aca22b640e68b94a63ab2d6564bd9ec5.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/121764058,22539195802/dicasdeprogramacao.com.br/dicasdeprogramacao.com.br_am_S2_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="320" height="50" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="3" oawidthset="true" data-load-complete="true" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: bottom; width: 320px; height: 50px;"></iframe>
 
 
 
